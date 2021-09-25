@@ -1,10 +1,19 @@
 {
-  "dependencies": {
-    "autoprefixer": "^10.3.4",
-    "postcss": "^8.3.6",
-    "tailwindcss": "^2.2.15"
-  },
+  "name": "tailwind-html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "build-css": "tailwind build style.css -o css/style.css"
+    "build-css": "tailwindcss build ./assets/css/tailwind.css -o ./assets/css/styles.css",
+    "prod": "NODE_ENV=production postcss assets/css/tailwind.css -o assets/css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.3.5",
+    "postcss": "^8.3.7",
+    "postcss-cli": "^9.0.0",
+    "tailwindcss": "^2.2.15"
   }
 }
